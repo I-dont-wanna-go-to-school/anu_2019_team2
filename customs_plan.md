@@ -39,3 +39,5 @@ x>1,852,000\, 50%
 ### 운동용품
 20%
 
+#### -출처-
+http://customs.go.kr/kcshome/common/popup/ItemTaxCalculationPopup.do;jsessionid=jkT6ctHTC7WcSyg0rlJQSsQ4Wytv5swJyfDgYXjXyt1nL1pDS9Wj!63541358
