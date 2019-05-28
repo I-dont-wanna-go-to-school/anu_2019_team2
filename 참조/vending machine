@@ -1,0 +1,96 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+int drink = 0;
+string ifswitch;
+string again = "y";
+
+
+while( again == "y" || again == "Y")
+{
+    cout << "Would you like to use if or switch statements?: ";
+    cin >> ifswitch;
+    cout << endl;
+
+    if(ifswitch == "switch" || ifswitch == "Switch")
+    {
+        cout << "Now using switch statements..." << endl << endl;
+
+        cout << "Your choices of drinks are: " << endl;
+        cout << "1 - Coke" << endl;
+        cout << "2 - Sprite" << endl;
+        cout << "3 - Water" << endl;
+        cout << "4 - Orange Juice" << endl;
+        cout << "5 - Apple Juice" << endl;
+
+        cout << "What drink would you like (1/5): ";
+        cin >> drink;
+        cout << endl;
+
+        switch(drink)
+        {
+            case 1 :
+                cout << "You chose Coke." << endl;
+                break;
+            case 2 :
+                cout << "You chose Sprite." << endl;
+                break;
+            case 3 :
+                cout << "You chose Water." << endl;
+                break;
+            case 4 :
+                cout << "You chose Orange Juice." << endl;
+                break;
+            case 5 :
+                cout << "You chose Apple Juice." << endl;
+                break;  
+            default :
+                cout << "Error. Choice was not valid, Here is your money back.";
+
+        }   
+    }
+    else if(ifswitch == "if" || ifswitch == "If")
+    {
+        cout << "Now using if statements..." << endl << endl;
+
+        cout << "Your choices of drinks are: " << endl;
+        cout << "1 - Coke" << endl;
+        cout << "2 - Sprite" << endl;
+        cout << "3 - Water" << endl;
+        cout << "4 - Orange Juice" << endl;
+        cout << "5 - Apple Juice" << endl;
+
+        cout << "What drink would you like (1/5): ";
+        cin >> drink;
+        cout << endl;
+
+        if(drink == 1)
+            cout << "You chose Coke." << endl;
+        else if(drink == 2)
+            cout << "You chose Sprite." << endl;
+        else if(drink == 3)
+            cout << "You chose Water." << endl;
+        else if(drink == 4)
+            cout << "You chose Orange Juice." << endl;
+        else if(drink == 5)
+            cout << "You chose Apple juice." << endl;
+        else
+        cout << "Error. Choice was not valid, Here is your money back.";        
+
+    }   
+
+    cout << "Would you like to go again? (Y/N)" << endl;
+    cin >> again;
+    cout << endl;
+
+}
+
+    cout << "Ending...";
+
+}
+
+
+
+//출처 : https://codereview.stackexchange.com/questions/143528/c-vending-machine-task
