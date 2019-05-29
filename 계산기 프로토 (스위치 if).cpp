@@ -95,7 +95,7 @@ while( again == "y" || again == "Y")
                 cout << "운동용품" << endl<<endl;
                 break;    
 			default :
-                cout << "덦는 품목입니다 더 많은 정보는 관세청 홈페이지에서 찾으시기 바랍니다."<<endl;
+                cout << "없는 품목입니다 더 많은 정보는 관세청 홈페이지에서 찾으시기 바랍니다."<<endl;
 
         }   
     }
@@ -164,7 +164,7 @@ while( again == "y" || again == "Y")
 			cout << "운동용품" << endl<<endl;
         
         else
-        cout << "덦는 품목입니다 더 많은 정보는 관세청 홈페이지에서 찾으시기 바랍니다."<<endl;
+        cout << "없는 품목입니다 더 많은 정보는 관세청 홈페이지에서 찾으시기 바랍니다."<<endl;
        
   }    
 
