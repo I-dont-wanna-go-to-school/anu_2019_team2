@@ -1,6 +1,77 @@
 #include <iostream>
 using namespace std;
 
+/*class thing{
+	protected:
+	int cost;
+	public:
+		
+		virtual double total(){}
+		
+};*/
+class wisky{
+	double tax = 1.55;
+	int cost;
+	public:
+		wisky(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+class cognac{
+	double tax = 1.45;
+	int cost;
+	public:
+		cognac(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+	};
+
+class wine{
+	double tax = 0.68;
+	int cost;
+	public:
+		wine(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+		
+class tabacco{
+	double tax = 0.40;
+	int cost;
+	public:
+		tabacco(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+class perfume{
+	double tax = 0.2;
+	int cost;
+	public:
+		perfume(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+class clothes{
+	double tax = 0.;
+	int cost;
+	public:
+		clothes(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+class expclothes{
+	double tax = 0.;
+	int cost;
+	public:
+		(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+
 int main() {
 
 int drink = 0;
@@ -19,17 +90,19 @@ while( again == "y" || again == "Y")
 	cout << "4- 담배" <<endl;
 	cout << "5- 향수" <<endl; 
 	cout << "6- 화장품" << endl;
-	cout << "7- 의류" <<endl;
-	cout << "8- 신발류" <<endl;
-	cout << "9- 일반가방"<< endl;
-	cout << "10- 고급가방" << endl;
-	cout << "11- 고급 시계" << endl;
-	cout << "12- 노트북"<< endl;
-	cout << "13- 캠코더" << endl;
-	cout << "14- 건강보조제" << endl;
-	cout << "15- 과자류" << endl;
-	cout << "16- 완구류" <<endl;
-	cout << "17- 운동용품" <<endl;
+	cout << "7- 일반의류(100만워 이하)" <<endl;
+	cout << "8- 고급의류 (100만원 초과)" <<endl; 
+	cout << "9- 신발류" <<endl;
+	cout << "10- 일반가방" << endl;
+	cout << "11- 고급가방" << endl;
+	cout << "12- 일반시계" <<endl;
+	cout << "13- 고급시계" << endl;
+	cout << "14- 노트북"<< endl;
+	cout << "15- 캠코더" << endl;
+	cout << "16- 건강보조제" << endl;
+	cout << "17- 과자류" << endl;
+	cout << "18- 완구류" <<endl;
+	cout << "19- 운동용품" <<endl;
 
         cout << endl << "어떤 물품입니까? (1/17): ";
         cin >> drink;
@@ -38,18 +111,38 @@ while( again == "y" || again == "Y")
         switch(drink)
         {
             case 1 :
-                cout << "위스키" << endl<<endl;
-                break;
+                wisky* p1;
+                p1 = new wisky(); 
+				cout << "위스키 가격: (천 원)" <<endl; 
+				p1->costs();
+				cout << "총 금액은" <<	p1->total()<< " 천 원"<< endl<<endl;
+				delete p1;
+			    break;
             case 2 :
-                cout << "꼬냑" << endl<<endl;
+                cognac* p2;
+                p2 = new cognac(); 
+				cout << "꼬냑 가격: (천 원)" <<endl; 
+				p2->costs();
+				cout << "총 금액은" <<	p2->total()<< " 천 원"<< endl<<endl;
+				delete p2;
                 break;
             case 3 :
-                cout << "포도주" << endl<<endl;
-                break;
+            	wine* p3;
+                p3 = new wine(); 
+				cout << "와인 가격: (천 원)" <<endl; 
+				p3->costs();
+				cout << "총 금액은" <<	p3->total()<< " 천 원"<< endl<<endl;
+				delete p3;
+				break;
             case 4 :
-                cout << "담배" << endl<<endl;
-                break;
-            case 5 :
+            	tabacco* p4;
+                p4 = new tabacco(); 
+				cout << "담배 가격: (천 원)" <<endl; 
+				p4->costs();
+				cout << "총 금액은" <<	p4->total()<< " 천 원"<< endl<<endl;
+				delete p4;
+				break;
+			case 5 :
                 cout << "향수" << endl<<endl;
                 break;  
             case 6 :
