@@ -38,10 +38,11 @@ class wine{
 class tabacco{
 	double tax = 0.40;
 	int cost;
+	int n;
 	public:
 		tabacco(){}
-		void costs(){cin>>cost;}
-		double total(){return tax * cost +	cost;	}
+		void costs(){cin>>cost>>n;}
+		double total(){return tax * cost + n*0.594+(cost+(cost*tax)+(n*0.594))*0.1+(n*1.007+(n*0.4399));}
 };
 
 class perfume{
@@ -54,7 +55,7 @@ class perfume{
 };
 
 class clothes{
-	double tax = 0.;
+	double tax = 0.2;
 	int cost;
 	public:
 		clothes(){}
@@ -63,10 +64,129 @@ class clothes{
 };
 
 class expclothes{
-	double tax = 0.;
+	double tax = 0.25;
 	int cost;
 	public:
-		(){}
+		expclothes(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+class shoes{
+	double tax = 0.2;
+	int cost;
+	public:
+		shoes(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+class expshoes{
+	double tax = 0.25;
+	int cost;
+	public:
+		expshoes(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+
+class bag{
+	double tax = 0.2;
+	int cost;
+	public:
+		bag(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+class expbag{
+	double tax = 0.5;
+	int cost;
+	public:
+		expbag(){}
+		void costs(){cin>>cost;}
+		double total(){return (1852*0.2)+(cost-1852)*tax +cost;	}
+};
+
+class watch{
+	double tax = 0.2;
+	int cost;
+	public:
+		watch(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+class overwatch{
+	double tax = 0.50;
+	int cost;
+	public:
+		overwatch(){}
+		void costs(){cin>>cost;}
+		double total(){return (1852*0.2)+(cost-1852)*tax +cost;	}
+};
+
+class camera{
+	double tax = 0.1;
+	int cost;
+	public:
+		camera(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+
+class laptop{
+	double tax = 0.1;
+	int cost;
+	public:
+		laptop(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+class cam{
+	double tax = 0.2;
+	int cost;
+	public:
+		cam(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+class diet{
+	double tax = 0.2;
+	int cost;
+	public:
+		diet(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+class cookie{
+	double tax = 0.2;
+	int cost;
+	public:
+		cookie(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+class toy{
+	double tax = 0.2;
+	int cost;
+	public:
+		toy(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
+class sport{
+	double tax = 0.2;
+	int cost;
+	public:
+		sport(){}
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
@@ -90,19 +210,20 @@ while( again == "y" || again == "Y")
 	cout << "4- 담배" <<endl;
 	cout << "5- 향수" <<endl; 
 	cout << "6- 화장품" << endl;
-	cout << "7- 일반의류(100만워 이하)" <<endl;
-	cout << "8- 고급의류 (100만원 초과)" <<endl; 
-	cout << "9- 신발류" <<endl;
-	cout << "10- 일반가방" << endl;
-	cout << "11- 고급가방" << endl;
-	cout << "12- 일반시계" <<endl;
-	cout << "13- 고급시계" << endl;
-	cout << "14- 노트북"<< endl;
-	cout << "15- 캠코더" << endl;
-	cout << "16- 건강보조제" << endl;
-	cout << "17- 과자류" << endl;
-	cout << "18- 완구류" <<endl;
-	cout << "19- 운동용품" <<endl;
+	cout << "7- 일반의류(1000 달러 이하)" <<endl;
+	cout << "8- 고급의류(100 달러 초과)" <<endl; 
+	cout << "9- 일반신발(1000 달러 이하)" <<endl;
+	cout << "10- 고급신발(100 달러 초과)" <<endl;
+	cout << "11- 일반가방(1,852,000 원 이하)" << endl;
+	cout << "12- 고급가방(1,852,000 원 초과)" << endl;
+	cout << "13- 일반시계(1,852,000 원 이하)" <<endl;
+	cout << "14- 고급시계(1,852,000 원 초과)" << endl;
+	cout << "15- 노트북"<< endl;
+	cout << "16- 캠코더" << endl;
+	cout << "17- 건강보조제" << endl;
+	cout << "18- 과자류" << endl;
+	cout << "19- 완구류" <<endl;
+	cout << "20- 운동용품" <<endl;
 
         cout << endl << "어떤 물품입니까? (1/17): ";
         cin >> drink;
@@ -137,14 +258,19 @@ while( again == "y" || again == "Y")
             case 4 :
             	tabacco* p4;
                 p4 = new tabacco(); 
-				cout << "담배 가격: (천 원)" <<endl; 
+				cout << "담배 가격: (천 원), 담배 갑 수" <<endl; 
 				p4->costs();
 				cout << "총 금액은" <<	p4->total()<< " 천 원"<< endl<<endl;
 				delete p4;
 				break;
 			case 5 :
-                cout << "향수" << endl<<endl;
-                break;  
+                perfume* p5;
+                p5 = new perfume(); 
+				cout << "향수 가격: (천 원)" <<endl; 
+				p5->costs();
+				cout << "총 금액은" <<	p5->total()<< " 천 원"<< endl<<endl;
+				delete p5;
+				break;
             case 6 :
                 cout << "화장품" << endl<<endl;
                 break;
@@ -164,8 +290,13 @@ while( again == "y" || again == "Y")
                 cout << "고급 시계" << endl<<endl;
                 break;
 			case 12 :
-                cout << "노트북" << endl<<endl;
-                break;
+                expbag* p12;
+                p12 = new expbag(); 
+				cout << "가방 가격: (천 원)" <<endl; 
+				p12->costs();
+				cout << "총 금액은" <<	p12->total()<< " 천 원"<< endl<<endl;
+				delete p12;
+				break;
 			case 13 :
                 cout << "캠코더" << endl<<endl;
                 break;
