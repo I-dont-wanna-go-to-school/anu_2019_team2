@@ -54,6 +54,15 @@ class perfume{
 		double total(){return tax * cost +	cost;	}
 };
 
+class makeup{
+	double tax = 0.2;
+	int cost;
+	public:
+		makeup(){}
+		void costs(){cin>>cost;}
+		double total(){return tax * cost +	cost;	}
+};
+
 class clothes{
 	double tax = 0.2;
 	int cost;
