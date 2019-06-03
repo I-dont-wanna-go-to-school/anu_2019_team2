@@ -195,7 +195,7 @@ class sport{
 
 int main() {
 
-int drink = 0;
+int no = 0;
 string again = "y";
 
 
@@ -229,10 +229,10 @@ while( again == "y" || again == "Y")
 
 
         cout << endl << "어떤 물품입니까? (1/17): ";
-        cin >> drink;
+        cin >> no;
         cout << endl;
 
-        switch(drink)
+        switch(no)
         {
             case 1 :
                 wisky* p1;
