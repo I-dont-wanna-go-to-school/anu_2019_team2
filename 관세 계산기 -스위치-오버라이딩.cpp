@@ -202,151 +202,151 @@ while( again == "y" || again == "Y")
                 p = new wisky(); 
 				cout << "위스키 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 			    break;
             case 2 :
                 p = new cognac(); 
 				cout << "꼬냑 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
                 break;
             case 3 :
                 p = new wine(); 
 				cout << "와인 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;
             case 4 :
                 p = new tabacco(); 
 				cout << "담배 가격: (천 원), 담배 갑 수" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;
 			case 5 :
                 p = new perfume(); 
 				cout << "향수 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;
             case 6 :
                 p = new makeup(); 
 				cout << "화장품 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;
 			case 7 :
                 p = new clothes(); 
 				cout << "의류 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;
 			case 8 :
                 p = new expclothes(); 
 				cout << "의류 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;
 			case 9 :
                 p = new shoes(); 
 				cout << "신발 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;
 			case 10 :
                 p = new expshoes(); 
 				cout << "신발 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;
 			case 11 :
                 p = new bag(); 
 				cout << "가방 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;
 			case 12 :
                 p = new expbag(); 
 				cout << "가방 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;
 			case 13 :
                 p = new watch(); 
 				cout << "시계 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;
 			case 14 :
                 p = new overwatch(); 
 				cout << "시계 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;		
 			case 15 :
                 p = new camera(); 
 				cout << "카메라 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;			   
 			case 16 :
                 p = new laptop(); 
 				cout << "노트북 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;
             case 17 :
                 p = new cam(); 
 				cout << "캠코더 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;   
 			 case 18 :
                 p = new diet(); 
 				cout << "건강보조제 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;   
 			 case 19 :
                 p = new cookie(); 
 				cout << "과자 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;   
 			 case 20 :
                 p = new toy(); 
 				cout << "완구 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;   	
 			 case 21 :
                 p = new sport(); 
 				cout << "운동용품 가격: (천 원)" <<endl; 
 				p->costs();
-				cout << "총 금액은" <<	p->total()<< " 천 원"<< endl;
+				cout << "구입 금액 + 관세" <<	p->total()<< " 천 원"<< endl;
 				delete p;
 				break;   			
 			default :
-                cout << "없는 품목입니다 더 많은 정보는 관세청 홈페이지에서 찾으시기 바랍니다."<<endl;
+                cout << "덦는 품목입니다 더 많은 정보는 관세청 홈페이지에서 찾으시기 바랍니다."<<endl;
 
         }   
     cout<<"신고 미이행시에는 납부세액의 40% 또는 60%(반복적 신고 미이행자)의 가산세가 부과됩니다."<<endl<<endl;
