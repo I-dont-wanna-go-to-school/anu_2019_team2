@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 class thing{
 	protected:
 	int cost;
@@ -23,15 +22,13 @@ class cognac:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 	};
-
 class wine:public thing{
 	double tax = 0.68;
 	public:
 		wine(){}
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
-};
-		
+};		
 class tabacco:public thing{
 	double tax = 0.40;
 	int n;
@@ -40,7 +37,6 @@ class tabacco:public thing{
 		void costs(){cin>>cost>>n;}
 		double total(){return tax * cost + n*0.594+(cost+(cost*tax)+(n*0.594))*0.1+(n*1.007+(n*0.4399));}
 };
-
 class perfume:public thing{
 	double tax = 0.2;
 	public:
@@ -48,7 +44,6 @@ class perfume:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
 class makeup:public thing{
 	double tax = 0.2;
 	public:
@@ -56,7 +51,6 @@ class makeup:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
 class clothes:public thing{
 	double tax = 0.2;
 	public:
@@ -64,7 +58,6 @@ class clothes:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
 class expclothes:public thing{
 	double tax = 0.25;
 	public:
@@ -72,7 +65,6 @@ class expclothes:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
 class shoes:public thing{
 	double tax = 0.2;
 	public:
@@ -80,7 +72,6 @@ class shoes:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
 class expshoes:public thing{
 	double tax = 0.25;
 	public:
@@ -88,8 +79,6 @@ class expshoes:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
-
 class bag:public thing{
 	double tax = 0.2;
 	public:
@@ -97,7 +86,6 @@ class bag:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
 class expbag:public thing{
 	double tax = 0.5;
 	public:
@@ -105,7 +93,6 @@ class expbag:public thing{
 		void costs(){cin>>cost;}
 		double total(){return (1852*0.2)+(cost-1852)*tax +cost;	}
 };
-
 class watch:public thing{
 	double tax = 0.2;
 	public:
@@ -113,7 +100,6 @@ class watch:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
 class overwatch:public thing{
 	double tax = 0.50;
 	public:
@@ -121,7 +107,6 @@ class overwatch:public thing{
 		void costs(){cin>>cost;}
 		double total(){return (1852*0.2)+(cost-1852)*tax +cost;	}
 };
-
 class camera:public thing{
 	double tax = 0.1;
 	public:
@@ -129,8 +114,6 @@ class camera:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
-
 class laptop:public thing{
 	double tax = 0.1;
 	public:
@@ -138,7 +121,6 @@ class laptop:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
 class cam:public thing{
 	double tax = 0.2;
 	public:
@@ -146,7 +128,6 @@ class cam:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
 class diet:public thing{
 	double tax = 0.2;
 	public:
@@ -154,7 +135,6 @@ class diet:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
 class cookie:public thing{
 	double tax = 0.2;
 	public:
@@ -162,7 +142,6 @@ class cookie:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
 class toy:public thing{
 	double tax = 0.2;
 	public:
@@ -170,7 +149,6 @@ class toy:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
 class sport:public thing{
 	double tax = 0.2;
 	public:
@@ -178,11 +156,9 @@ class sport:public thing{
 		void costs(){cin>>cost;}
 		double total(){return tax * cost +	cost;	}
 };
-
-
 int main() {
 
-int drink = 0;
+int no = 0;
 string again = "y";
 thing* p;
 
@@ -216,11 +192,11 @@ while( again == "y" || again == "Y")
 
 		
         cout << endl << "어떤 물품입니까? (1/17): ";
-        cin >> drink;
+        cin >> no;
         cout << endl;
 		
 
-        switch(drink)
+        switch(no)
         {
             case 1 :
                 p = new wisky(); 
